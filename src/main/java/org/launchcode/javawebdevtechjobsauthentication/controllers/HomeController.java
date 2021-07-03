@@ -34,7 +34,7 @@ public class HomeController {
 
     @PostMapping("add")
     public String processAddJobForm(@ModelAttribute @Valid Job newJob,
-                                       Errors errors) {
+                                    Errors errors) {
 
         if (errors.hasErrors()) {
             return "add";

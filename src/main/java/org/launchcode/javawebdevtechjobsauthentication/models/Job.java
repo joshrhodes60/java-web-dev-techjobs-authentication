@@ -10,6 +10,7 @@ public class Job extends AbstractEntity{
     @NotNull
     @Size(min=3, max=50)
     private String name;
+
     private String employer;
     private String skill;
 
