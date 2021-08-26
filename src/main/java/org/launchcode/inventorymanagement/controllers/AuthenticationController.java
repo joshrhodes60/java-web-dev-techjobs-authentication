@@ -1,9 +1,9 @@
-package org.launchcode.javawebdevtechjobsauthentication.controllers;
+package org.launchcode.inventorymanagement.controllers;
 
-import org.launchcode.javawebdevtechjobsauthentication.models.User;
-import org.launchcode.javawebdevtechjobsauthentication.models.data.UserRepository;
-import org.launchcode.javawebdevtechjobsauthentication.models.dto.LoginFormDTO;
-import org.launchcode.javawebdevtechjobsauthentication.models.dto.RegisterFormDTO;
+import org.launchcode.inventorymanagement.models.User;
+import org.launchcode.inventorymanagement.models.data.UserRepository;
+import org.launchcode.inventorymanagement.models.dto.LoginFormDTO;
+import org.launchcode.inventorymanagement.models.dto.RegisterFormDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

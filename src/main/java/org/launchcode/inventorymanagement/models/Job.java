@@ -1,4 +1,4 @@
-package org.launchcode.javawebdevtechjobsauthentication.models;
+package org.launchcode.inventorymanagement.models;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

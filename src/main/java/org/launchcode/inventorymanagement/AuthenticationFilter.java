@@ -1,9 +1,9 @@
 
-package org.launchcode.javawebdevtechjobsauthentication;
+package org.launchcode.inventorymanagement;
 
-import org.launchcode.javawebdevtechjobsauthentication.controllers.AuthenticationController;
-import org.launchcode.javawebdevtechjobsauthentication.models.User;
-import org.launchcode.javawebdevtechjobsauthentication.models.data.UserRepository;
+import org.launchcode.inventorymanagement.controllers.AuthenticationController;
+import org.launchcode.inventorymanagement.models.User;
+import org.launchcode.inventorymanagement.models.data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 

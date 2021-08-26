@@ -1,4 +1,4 @@
-package org.launchcode.javawebdevtechjobsauthentication.models;
+package org.launchcode.inventorymanagement.models;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

@@ -1,6 +1,6 @@
-package org.launchcode.javawebdevtechjobsauthentication.models.data;
+package org.launchcode.inventorymanagement.models.data;
 
-import org.launchcode.javawebdevtechjobsauthentication.models.Job;
+import org.launchcode.inventorymanagement.models.Job;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

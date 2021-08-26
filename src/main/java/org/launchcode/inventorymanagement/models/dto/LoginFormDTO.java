@@ -1,4 +1,4 @@
-package org.launchcode.javawebdevtechjobsauthentication.models.dto;
+package org.launchcode.inventorymanagement.models.dto;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.NotBlank;

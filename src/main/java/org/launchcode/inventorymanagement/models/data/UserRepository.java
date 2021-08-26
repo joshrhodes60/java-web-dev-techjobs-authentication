@@ -1,6 +1,6 @@
-package org.launchcode.javawebdevtechjobsauthentication.models.data;
+package org.launchcode.inventorymanagement.models.data;
 
-import org.launchcode.javawebdevtechjobsauthentication.models.User;
+import org.launchcode.inventorymanagement.models.User;
 import org.springframework.data.repository.CrudRepository;
 
 public interface UserRepository extends CrudRepository<User, Integer> {

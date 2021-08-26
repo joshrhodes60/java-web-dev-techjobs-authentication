@@ -1,4 +1,4 @@
-package org.launchcode.javawebdevtechjobsauthentication.models.dto;
+package org.launchcode.inventorymanagement.models.dto;
 
 public class RegisterFormDTO extends LoginFormDTO {
 

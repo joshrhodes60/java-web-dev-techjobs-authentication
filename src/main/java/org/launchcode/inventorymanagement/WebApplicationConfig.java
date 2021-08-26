@@ -1,4 +1,4 @@
-package org.launchcode.javawebdevtechjobsauthentication;
+package org.launchcode.inventorymanagement;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
