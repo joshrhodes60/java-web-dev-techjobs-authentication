@@ -9,22 +9,22 @@
 
 <form method="post" style="max-width:600px;">
     <div class="form-group">
-        <label th:for="name">Name</label>
+        <label th:for="name">Product</label>
         <input class="form-control" th:field="${job.name}" />
         <span th:errors="${job.name}" class="error"></span>
     </div>
     <div class="form-group">
-        <label th:for="name">Employer</label>
+        <label th:for="name">Quantity</label>
         <input class="form-control" th:field="${job.employer}" />
         <span th:errors="${job.employer}" class="error"></span>
     </div>
-    <div class="form-group">
-        <label th:for="name">Skill</label>
-        <input class="form-control" th:field="${job.skill}" />
-        <span th:errors="${job.skill}" class="error"></span>
-    </div>
+<!--    <div class="form-group">-->
+<!--        <label th:for="name">Skill</label>-->
+<!--        <input class="form-control" th:field="${job.skill}" />-->
+<!--        <span th:errors="${job.skill}" class="error"></span>-->
+<!--    </div>-->
 
-    <input type="submit" value="Add Job" />
+    <input type="submit" value="Add Product" />
 </form>
 
 </body>

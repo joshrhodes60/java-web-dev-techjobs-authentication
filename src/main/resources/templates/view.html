@@ -10,8 +10,18 @@
 <div class="job-listing">
     <p th:text="${'ID: ' + job.id}"></p>
     <p th:text="${'Name: ' + job.name}"></p>
-    <p th:text="${'Employer: ' + job.employer}"></p>
-    <p th:text="${'Skill: ' + job.skill}"></p>
+    <p th:text="${'Current Quantity: ' + job.employer}"></p>
+<!--    <p th:text="${'Quantity Taken: ' + job.employer}  "></p>-->
+    <p th:text="${'Replenish Quantity: ' + job.employer}"></p>
+<!--    <p th:text="${'Skill: ' + job.skill}"></p>-->
+
+    <form action="/action_page.php">
+        <label for="quantity">Quantity Taken</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10000">
+        <input type="submit">
+        <button onclick="myFunction()">Remove Item</button>
+
+    </form>
 </div>
 
 

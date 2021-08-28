@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.Optional;
 
-/**
- * Created by LaunchCode
- */
+
 @Controller
 public class HomeController {
 
@@ -43,6 +41,24 @@ public class HomeController {
         jobRepository.save(newJob);
         return "redirect:";
     }
+
+//    @GetMapping("remove")
+//    public String displayRemoveJobForm(Model model) {
+//        model.addAttribute(new Job());
+//        return "remove";
+//    }
+//
+//    @PostMapping("remove")
+//    public String displayRemoveJobForm(@ModelAttribute @Valid Job newJob,
+//                                    Errors errors) {
+//
+//        if (errors.hasErrors()) {
+//            return "remove";
+//        }
+//
+//        jobRepository.save(newJob);
+//        return "redirect:";
+//    }
 
     @GetMapping("view/{jobId}")
     public String displayViewJob(Model model, @PathVariable int jobId) {
