@@ -41,37 +41,38 @@ public class HomeController {
         jobRepository.save(newJob);
         return "redirect:";
     }
+    @RequestMapping(path = "view/delete/{id}")
+    public String processDeleteJobForm(Model model, @PathVariable("id") String id) {
 
-//    @GetMapping("remove")
-//    public String displayRemoveJobForm(Model model) {
-//        model.addAttribute(new Job());
-//        return "remove";
-//    }
-//
-//    @PostMapping("remove")
-//    public String displayRemoveJobForm(@ModelAttribute @Valid Job newJob,
-//                                    Errors errors) {
-//
 //        if (errors.hasErrors()) {
-//            return "remove";
+//            return "view";// handle when errors
 //        }
-//
-//        jobRepository.save(newJob);
-//        return "redirect:";
+
+        jobRepository.deleteById(Integer.parseInt(id));
+        return "redirect:";
+    }
+
+//    @RequestMapping(path = "/delete/{id}")
+//    public String deleteEmployeeById(Model model, @PathVariable("id") Long id)
+//            throws RecordNotFoundException
+//    {
+//        service.deleteEmployeeById(id);
+//        return "redirect:/";
 //    }
 
-    @GetMapping("view/{jobId}")
-    public String displayViewJob(Model model, @PathVariable int jobId) {
 
-        Optional optJob = jobRepository.findById(jobId);
-        if (!optJob.isEmpty()) {
-            Job job = (Job) optJob.get();
-            model.addAttribute("job", job);
-            return "view";
-        } else {
-            return "redirect:/";
+        @GetMapping("view/{jobId}")
+        public String displayViewJob (Model model,@PathVariable int jobId){
+
+            Optional optJob = jobRepository.findById(jobId);
+            if (!optJob.isEmpty()) {
+                Job job = (Job) optJob.get();
+                model.addAttribute("job", job);
+                return "view";
+            } else {
+                return "redirect:/";
+            }
         }
-    }
 
 
 }
