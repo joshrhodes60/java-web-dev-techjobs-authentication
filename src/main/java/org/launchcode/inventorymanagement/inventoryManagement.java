@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JavaWebDevTechjobsAuthenticationApplication {
+public class inventoryManagement {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JavaWebDevTechjobsAuthenticationApplication.class, args);
+		SpringApplication.run(inventoryManagement.class, args);
 	}
 
 }
